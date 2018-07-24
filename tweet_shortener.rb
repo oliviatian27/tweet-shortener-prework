@@ -5,7 +5,8 @@ def word_substituter(tweet)
 "to" => '2', 
 "two" => '2', 
 "too" => '2', 
-"for, four"=> '4',
+"for"=> '4',
+"four"=> '4',
 'be' => 'b',
 'you'=> 'u',
 "at" => "@" ,
@@ -16,6 +17,8 @@ def word_substituter(tweet)
   tweet.collect!.with_index do |x,i|
     if key.include?(x)==true
       tweet[i]=dictionary[x]
+    else 
+      tweet[i]=x
     end
   end
   tweet.join(' ')
