@@ -9,4 +9,4 @@ dictionary={
 "and" => "&"
 }
 
-def 
+def word_substituter(tweet)
