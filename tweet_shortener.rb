@@ -16,8 +16,8 @@ def word_substituter(tweet)
   tweet.collect!.with_index do |x,i|
     if key.include?(x)==true
       tweet[i]=dictionary[x]
-    elsif key.include?(x.lowerca)==true
-      tweet[i]=dictionary[x]
+    elsif key.include?(x.downcase)==true
+      tweet[i]=dictionary[x.downcase]
     else 
       tweet[i]=x
     end
