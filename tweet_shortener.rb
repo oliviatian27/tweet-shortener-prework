@@ -10,3 +10,8 @@ dictionary={
 }
 
 def word_substituter(tweet)
+ tweet= tweet.split(' ')
+ key=dictionary.keys
+  tweet.collect do |x|
+    if key.include?(x)
+      x
