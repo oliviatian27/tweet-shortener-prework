@@ -1,4 +1,3 @@
-
 def word_substituter(tweet)
   dictionary={
 "hello" => 'hi',
@@ -23,3 +22,5 @@ def word_substituter(tweet)
   end
   tweet.join(' ')
  end
+ 
+ def 
