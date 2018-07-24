@@ -12,6 +12,8 @@ dictionary={
 def word_substituter(tweet)
  tweet= tweet.split(' ')
  key=dictionary.keys
-  tweet.collect do |x|
-    if key.include?(x)
-      x
+  tweet.collect!.with_index do |x,i|
+    if key.include?(x)==true
+      tweet[i]=dictionary[x]
+    end
+  end
