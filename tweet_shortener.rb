@@ -14,8 +14,8 @@ def word_substituter(tweet)
  tweet= tweet.split(' ')
  key=dictionary.keys
   tweet.collect!.with_index do |x,i|
-    if key.include?(x)==true
-      tweet[i]=dictionary[x]
+    if key.include?(x||x.capitalize)==true
+      tweet[i]=dictionary[x||x.capitalize]
     else 
       tweet[i]=x
     end
