@@ -1,5 +1,6 @@
-# Write your code here.
-dictionary={
+
+def word_substituter(tweet)
+  dictionary={
 "hello" => 'hi',
 "to, two, too" => '2', 
 "for, four"=> '4',
@@ -8,8 +9,6 @@ dictionary={
 "at" => "@" ,
 "and" => "&"
 }
-
-def word_substituter(tweet)
  tweet= tweet.split(' ')
  key=dictionary.keys
   tweet.collect!.with_index do |x,i|
